@@ -1,8 +1,15 @@
 /*Style du body*/
 
+html {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    position: relative;
 }
 
 /*Style du header*/
@@ -41,6 +48,9 @@ ul li {
 
 footer{
     background-color: rgb(131, 125, 211);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 #footer-blocks {
