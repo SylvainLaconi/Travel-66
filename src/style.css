@@ -1,12 +1,14 @@
-/*Style du header*/
+/*Style du body*/
 
 body {
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/*Style du header*/
+
 header {
-    height: 120px;
+    height: 170px;
     width: 100%;
     text-align: center;
 }
@@ -29,4 +31,12 @@ a {
     text-decoration: none;
     color: white;
 
+}
+
+/*Style du footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(204, 146, 146);
 }
