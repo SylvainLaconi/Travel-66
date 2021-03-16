@@ -8,29 +8,30 @@ body {
 /*Style du header*/
 
 header {
-    height: 170px;
+    min-height: 170px;
     width: 100%;
     text-align: center;
 }
 
 ul {
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 
 ul li {
-    display: inline-block;
-    width: 10%;
     background-color: rgb(93, 125, 228);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px 5px 5px;
     border-radius: 4px 4px 4px 4px;
+    text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
     color: white;
-
 }
 
 /*Style du footer*/
@@ -39,4 +40,23 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: rgb(204, 146, 146);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#logos-reseaux {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logos-reseaux img {
+    width: 30px;
+}
+
+#contact {
+    display: flex;
+}
+
+#logo-contact {
+    width: 30px;
 }
