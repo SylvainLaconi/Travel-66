@@ -23,15 +23,18 @@ ul {
 
 
 ul li {
-    background-color: rgb(93, 125, 228);
     padding: 5px 5px 5px 5px;
-    border-radius: 4px 4px 4px 4px;
     text-transform: uppercase;
 }
 
-a {
+.navbar {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+.navbar:hover {
+    color: cadetblue;
+    font-weight: bold;
 }
 
 /*Style du footer*/
