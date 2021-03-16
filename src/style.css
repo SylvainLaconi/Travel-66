@@ -15,7 +15,7 @@ body {
 /*Style du header*/
 
 header {
-    min-height: 170px;
+    min-height: 150px;
     width: 100%;
     text-align: center;
 }
@@ -43,6 +43,14 @@ ul li {
 .navbar:hover {
     color: cadetblue;
     font-weight: bold;
+}
+
+#burger-menu {
+    display: none;
+}
+
+#icone-menu {
+    width: 60px;
 }
 
 /*Style du footer*/
@@ -96,10 +104,12 @@ footer{
 
 @media (max-width: 576px) { 
     ul{
-        flex-direction: column;
+        display: none;
     }
 
-    ul li {
+    #burger-menu {
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
 
