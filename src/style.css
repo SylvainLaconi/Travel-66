@@ -90,3 +90,30 @@ footer{
     font-size: 0.8em;
     padding-bottom: 5px;
 }
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) { 
+    #footer-blocks {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        width: auto;
+    }
+
+    .footer-items{
+        width: 90%;
+    }
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) { ... }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) { ... }
