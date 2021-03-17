@@ -45,13 +45,41 @@ ul li {
     font-weight: bold;
 }
 
-#burger-menu {
-    display: none;
-}
+/*Menu déroulant*/
 
-#icone-menu {
-    width: 60px;
-}
+.boutonmenuprincipal {
+    background-color: rgb(131, 125, 211);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    }
+.boutonmenuprincipal:hover {
+    background-color: rgb(131, 125, 211);
+    }
+.dropdown {
+    position: relative;
+    display: none;
+    background-color: rgb(131, 125, 211);
+    width: 100%;
+    margin-bottom: 5px;
+    }
+.dropdown-child {
+    display: none;
+    background-color: rgb(170, 166, 231);
+    min-width: 50px;
+    }
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    }
+.dropdown:hover .dropdown-child {
+    display: block;
+    }
+
+
 
 /*Style du footer*/
 
@@ -107,11 +135,9 @@ footer{
         display: none;
     }
 
-    #burger-menu {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+    .dropdown {
+        display: inline-block;
+        }
 
     #footer-blocks {
         flex-direction: column;
@@ -122,6 +148,7 @@ footer{
 
     .footer-items{
         width: 90%;
+        font-size: 0.8em;
     }
  }
 
