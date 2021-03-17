@@ -48,25 +48,25 @@ ul li {
 /*Menu déroulant*/
 
 .boutonmenuprincipal {
-    background-color: rgb(131, 125, 211);
+    background-color: #e4d9e8;
     cursor: pointer;
     margin: 0;
     padding: 0;
     border: none;
     }
 .boutonmenuprincipal:hover {
-    background-color: rgb(131, 125, 211);
+    background-color: #e4d9e8;
     }
 .dropdown {
     position: relative;
     display: none;
-    background-color: rgb(131, 125, 211);
+    background-color: #e4d9e8;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     }
 .dropdown-child {
     display: none;
-    background-color: rgb(170, 166, 231);
+    background-color: #e4d9e8;
     min-width: 50px;
     }
 .dropdown-child a {
@@ -79,12 +79,16 @@ ul li {
     display: block;
     }
 
+    .dropdown-child a:hover {
+        font-weight: bold;
+    }
+
 
 
 /*Style du footer*/
 
 footer{
-    background-color: rgb(131, 125, 211);
+    background-color: #e4d9e8;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -127,6 +131,9 @@ footer{
     font-size: 0.8em;
     padding-bottom: 5px;
 }
+.hidden-span {
+    display: block;
+}
 
 /*X-Small devices (under 576px)*/
 
@@ -150,6 +157,14 @@ footer{
         width: 90%;
         font-size: 0.8em;
     }
+
+    .hidden-span {
+        display: none;
+    }
+
+    #permanent-span {
+        margin-bottom: 10px;
+    }
  }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -163,6 +178,7 @@ footer{
         width: 100%;
     }
 
+}
 /*Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 992px) { 
@@ -174,6 +190,7 @@ footer{
         width: 100%;
     }
 }
+
 
 /*Large devices (desktops, 992px and up)*/
 
