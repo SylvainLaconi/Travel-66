@@ -1,6 +1,21 @@
-#main-picture {
+.img-carousel {
     width: 100%;
-    display: block;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 600px;
+    width: 1900px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
 }
 
 #presentation {
