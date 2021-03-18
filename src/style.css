@@ -1,0 +1,62 @@
+/*Style du body*/
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Style du header*/
+
+header {
+    min-height: 170px;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+
+ul li {
+    background-color: rgb(93, 125, 228);
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px 4px 4px 4px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Style du footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(204, 146, 146);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#logos-reseaux {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logos-reseaux img {
+    width: 30px;
+}
+
+#contact {
+    display: flex;
+}
+
+#logo-contact {
+    width: 30px;
+}

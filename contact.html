@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/contact.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="logo-travel-66" height="120px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="circuit-urban.html">Circuit Urban</a></li>
+                <li><a href="circuit-wild.html">Circuit Wild</a></li>
+                <li><a href="circuit-beach.html">Circuit Beach</a></li>
+                <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div class="info">
+            <div class="block-heading">
+                <h2 class="text-info">Informations</h2>
+            </div>
+            <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Adresse:</h4>
+                <p>8 rue des Semailles, 67370 Willgottheim</p>
+            </div>
+            <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>david67230@gmail.com</p>
+            </div>
+            <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Téléphone :</h4>
+                <p>+336 845 365 95</p>
+            </div>
+        </div>
+        <div class="section_envoi">
+            <div class="block-heading">
+                <h2 class="text-info"></h2>
+            </div>
+            <form method="POST">
+                <div class="">
+                    <label for="circuit-select">Choississez votre sujet :</label>
+                    <select name="pets" id="circuit-select">
+                        <option value="">--</option>
+                        <option value="urban">Circuit Urban</option>
+                        <option value="cat">Circuit Wild</option>
+                        <option value="hamster">Circuit Urban</option>
+                        <option value="parrot">Sujet</option>
+                    </select>
+                </div>
+                <div class="">
+                    <label for="subject">Demande :</label>
+                    <input class="form-control item" name="subject" type="text" id="subject"
+                        placeholder="demande de réservation pour le ..." value="">
+                </div>
+                <div class="">
+                    <label for="message">Message :</label>
+                    <textarea class="form-control" name="message" id="message"
+                        placeholder="j'ai besoin de quelqu'un pour s'occuper de ..."></textarea>
+                </div>
+                <input type="hidden" value="" name="id_session">
+                <button class="" type="submit">Validez</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="conditions-generales">
+            <span>Conditions générales</span>
+        </div>
+        <div id="reseaux-sociaux">
+            <span>Réseaux sociaux</span>
+            <div id="logos-reseaux">
+                <img src="images/logo-facebook.png" alt="logo-facebook">
+                <img src="images/logo-instagram.png" alt="logo-instagram">
+                <img src="images/logo-google.png" alt="logo-google">
+                <img src="images/logo-t.png" alt="logo-t">
+            </div>
+        </div>
+        <div id="infos-contact">
+            <span>Infos contact</span>
+            <img src="images/logo-mail.png" alt="logo-mail" id="logo-contact">
+        </div>
+    </footer>
+</body>
+
+</html>

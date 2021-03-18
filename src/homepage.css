@@ -1,0 +1,10 @@
+#main-picture {
+    width: 100%;
+}
+
+#presentation {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    font-size: 0.8em;
+}
