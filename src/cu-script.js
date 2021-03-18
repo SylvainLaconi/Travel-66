@@ -10,12 +10,12 @@ carouselButtons.forEach(button => {
      if (event.target.id === 'previous') {
         if (imageIndex !== 1) {
           imageIndex--;
-          translateX += 500;
+          translateX += 900;
         }
       } else {
         if (imageIndex !== numberOfImages) {
           imageIndex++;
-          translateX -= 500;
+          translateX -= 900;
         }
       }
       carouselImages.style.transform = `translateX(${translateX}px)`;
