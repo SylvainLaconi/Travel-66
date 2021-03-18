@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/style-wild.css">
     <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/homepage.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -48,12 +47,20 @@
         <p id="circuit-subtitle">Grand Canyon - Yosemite Park - Death Valley</p>
     </section>
  
-
-<section class="carousel">
-    <div class="slider">
-        <img src="images/grandcanyon.png" />
-    </div>
-</section>
+    <section>
+        <div class="carousel">
+            <div class="image-container" id="imgs">
+              <img
+                src="images/grandcanyon.png"
+                alt="grand-canyon" class="img-carousel"/>
+              <img
+                src="images/Yosemitepark.jpeg"
+                alt="yosemite-park" class="img-carousel"/>
+              <img
+              src="images/Dvalley.jpeg"
+              alt="death-valley" class="img-carousel" /> 
+            </div>
+        </section>
 
 
     <section class="container">
@@ -114,6 +121,6 @@
         </div>
         <div id="copyright">© 2021 Travel66</div>
     </footer>
-<script src="src/script.js"></script>
+<script src="src/cw-script.js"></script>
 </body>
 </html>
