@@ -8,8 +8,9 @@ html {
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    min-height: 100%;
-    position: relative;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 /*Style du header*/
@@ -89,7 +90,6 @@ ul li {
 
 footer{
     background-color: #e4d9e8;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
