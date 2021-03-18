@@ -5,9 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/style-wild.css">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/homepage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+
+    <header>
+        <div class="dropdown">
+            <button class="boutonmenuprincipal"><img src="images/icone-menu.png" alt="icone-menu" width="50px"></button>
+            <div class="dropdown-child">
+                <a href="index.html">Home</a>
+                <a href="circuit-urban.html">Circuit Urban</a>
+                <a href="circuit-wild.html">Circuit Wild</a>
+                <a href="circuit-beach.html">Circuit Beach</a>
+                <a href="infos-pratiques.html">Infos pratiques</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div id="logo">
+            <img src="images/logo.png" alt="logo-travel-66" height="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="navbar">Home</a></li>
+                <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
+                <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
+                <li><a href="circuit-beach.html" class="navbar">Circuit Beach</a></li>
+                <li><a href="infos-pratiques.html" class="navbar">Infos pratiques</a></li>
+                <li><a href="contact.html" class="navbar">Contact</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <section>
+        <div class="circuit-title">
+        <h3>Circuit Wild</h3>
+    </div>
+        <p id="circuit-subtitle">Grand Canyon - Yosemite Park - Death Valley</p>
+    </section>
+ 
+
+<section class="carousel">
+    <div class="slider">
+        <img src="images/grandcanyon.png" />
+    </div>
+</section>
+
+
+    <section class="container">
+        <div class="card">
+            <h4>Programme</h4>
+            <ul id="prog-info">
+                <li>Jour : C'est le grand départ, envol pour la Californie!</li>
+                <li>Jour : Découverte du Grand Canyon et de son
+                    panorama à couper le souffle! </li>
+                <li>Jour : Visite du Yosemite Park, une des plus belles vallées au monde!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d3314070.2929050997!2d-117.74606333302707!3d35.79019158884426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2sParc%20national%20du%20Grand%20Canyon%2C%20Arizona%2C%20%C3%89tats-Unis!3m2!1d36.1069258!2d-112.1129484!4m5!1s0x80c74b7776ae8a47%3A0xccc9f07c7bf2b054!2sParc%20national%20de%20la%20vall%C3%A9e%20de%20la%20Mort%2C%20%C3%89tats-Unis!3m2!1d36.505389099999995!2d-117.0794078!4m5!1s0x8096f09df58aecc5%3A0x2d249c2ced8003fe!2sParc%20national%20de%20Yosemite%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d37.8651011!2d-119.5383294!5e0!3m2!1sfr!2sfr!4v1615973717814!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+        <div class="card">
+            <h4>Informations</h4>
+                    <ul id="prog-info">
+                        <li>Amoureux du grand air c'est par ici!</li>
+                        <li>Immersion nature et découverte</li>
+                        <li>Niveau dynamique</li>
+                        <li>Bonne condition physique requise</li>
+                    </ul>
+                </div>
+
+    </section>
+    <footer>
+        <div id="footer-blocks">
+            <div class="footer-items">
+                <span id="permanent-span">Conditions générales</span>
+            </div>
+            <div class="footer-items" id="reseaux-sociaux">
+                <span class="hidden-span">Retrouvez-nous sur</span>
+                <div id="logos-reseaux">
+                    <a href="http://www.facebook.com" target="_blank">
+                        <img src="images/logo-facebook.png" alt="logo-facebook">
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank">
+                        <img src="images/logo-instagram.png" alt="logo-instagram">
+                    </a>
+                    <a href="http://www.google.com" target="_blank">
+                        <img src="images/logo-google.png" alt="logo-google">
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank">
+                        <img src="images/logo-t.png" alt="logo-t">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-items" id="infos-contact">
+                <span class="hidden-span">Contactez-nous</span>
+                <div>
+                    <a href="contact.html">
+                        <img src="images/logo-mail.png" alt="logo-mail" id="logo-contact">
+                    </a> 
+                </div> 
+            </div>
+        </div>
+        <div id="copyright">© 2021 Travel66</div>
+    </footer>
+<script src="src/script.js"></script>
 </body>
 </html>
