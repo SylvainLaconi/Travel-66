@@ -3,6 +3,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+/* Page title */
+
 .circuit-title {
     display: flex;
     justify-content: center;
@@ -14,6 +17,30 @@ body {
     margin-bottom: 50px;
 }
 
+/* Carousel */
+
+.img-carousel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    height: 400px;
+    width: 900px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cards */
+
 .container {
     display: flex;
 }
@@ -23,19 +50,12 @@ body {
     width: 400px;
     height: 250px;
     margin: auto;
+    margin-top: 4%;
     margin-bottom: 10%;
     border-radius: 10%;
 }
 
 
-
-.carousel {
-    height: 600px;
-    width: 1900px;
-    margin: auto;
-    margin-bottom: 7%;
-    overflow: hidden;
-}
 
 iframe {
     width: 400px;
@@ -60,9 +80,13 @@ h4 {
 
 
 @media (max-width: 576px) { 
-    .container {
+    .container  {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .card ul {
+        display: inherit;
     }
 }
