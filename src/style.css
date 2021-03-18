@@ -3,18 +3,30 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    position: relative;
 }
 
 /*Style du header*/
 
 header {
     min-height: 170px;
+    min-height: 150px;
     width: 100%;
     text-align: center;
 }
 
 ul {
     margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -42,11 +54,86 @@ footer {
     background-color: rgb(204, 146, 146);
     padding-top: 10px;
     padding-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar:hover {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+/*Menu déroulant*/
+
+.boutonmenuprincipal {
+    background-color: #e4d9e8;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    }
+.boutonmenuprincipal:hover {
+    background-color: #e4d9e8;
+    }
+.dropdown {
+    position: relative;
+    display: none;
+    background-color: #e4d9e8;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+.dropdown-child {
+    display: none;
+    background-color: #e4d9e8;
+    min-width: 50px;
+    }
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    }
+.dropdown:hover .dropdown-child {
+    display: block;
+    }
+
+    .dropdown-child a:hover {
+        font-weight: bold;
+    }
+
+
+
+/*Style du footer*/
+
+footer{
+    background-color: #e4d9e8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-blocks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
 }
 
 #logos-reseaux {
     display: flex;
     justify-content: space-around;
+    width: 70%;
 }
 
 #logos-reseaux img {
@@ -59,4 +146,304 @@ footer {
 
 #logo-contact {
     width: 30px;
+    width: 35px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+.hidden-span {
+    display: block;
+}
+
+/*X-Small devices (under 576px)*/
+
+@media (max-width: 576px) { 
+    ul{
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+        }
+
+    #footer-blocks {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        width: auto;
+    }
+
+    .footer-items{
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .hidden-span {
+        display: none;
+    }
+
+    #permanent-span {
+        margin-bottom: 10px;
+    }
+
+    .carousel{
+        display: none;
+    }
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    ul{
+        flex-direction: column;
+    }
+
+    ul li {
+        width: 100%;
+    }
+
+    .carousel{
+        display: none;
+    }
+
+}
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 992px) { 
+    ul{
+        flex-direction: column;
+    }
+
+    ul li {
+        width: 100%;
+    }
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    
+}/*Style du body*/
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    position: relative;
+}
+
+/*Style du header*/
+
+header {
+    min-height: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+
+ul li {
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar:hover {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+/*Menu déroulant*/
+
+.boutonmenuprincipal {
+    background-color: #e4d9e8;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    }
+.boutonmenuprincipal:hover {
+    background-color: #e4d9e8;
+    }
+.dropdown {
+    position: relative;
+    display: none;
+    background-color: #e4d9e8;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+.dropdown-child {
+    display: none;
+    background-color: #e4d9e8;
+    min-width: 50px;
+    }
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    }
+.dropdown:hover .dropdown-child {
+    display: block;
+    }
+
+    .dropdown-child a:hover {
+        font-weight: bold;
+    }
+
+
+
+/*Style du footer*/
+
+footer{
+    background-color: #e4d9e8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-blocks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+#logos-reseaux {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+#logos-reseaux img {
+    width: 30px;
+}
+
+#contact {
+    display: flex;
+}
+
+#logo-contact {
+    width: 35px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+.hidden-span {
+    display: block;
+}
+
+/*X-Small devices (under 576px)*/
+
+@media (max-width: 576px) { 
+    ul{
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+        }
+
+    #footer-blocks {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        width: auto;
+    }
+
+    .footer-items{
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .hidden-span {
+        display: none;
+    }
+
+    #permanent-span {
+        margin-bottom: 10px;
+    }
+
+    .carousel{
+        display: none;
+    }
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    ul{
+        flex-direction: column;
+    }
+
+    ul li {
+        width: 100%;
+    }
+
+    .carousel{
+        display: none;
+    }
+
+}
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 992px) { 
+    ul{
+        flex-direction: column;
+    }
+
+    ul li {
+        width: 100%;
+    }
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    
 }
