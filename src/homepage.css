@@ -24,6 +24,21 @@
     font-size: 0.8em;
 }
 
+#meteo-container {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    background-color: #e4d9e8;
+    border-radius: 1rem;
+    padding: 20px;
+    width: 30%;
+}
+
+#icone-meteo {
+    height: 100px;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) { 
     #main-picture {

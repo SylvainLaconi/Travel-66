@@ -133,6 +133,7 @@ footer{
 }
 .hidden-span {
     display: block;
+    margin-bottom: 20px;
 }
 
 /*X-Small devices (under 576px)*/
