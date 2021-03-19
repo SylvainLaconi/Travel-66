@@ -52,6 +52,19 @@
     width: 100%;
     height: 20em;
 }
+
+.programme{
+    display: inline-block;
+    background-color: red;
+    width: 100%;
+    margin: 5px;
+}
+
+.infos{
+    text-align: center;
+    font-style: italic;
+}
+
 .card:hover{
     cursor: pointer;
     transition: transform 1s;
