@@ -30,6 +30,12 @@ function resetInterval() {
 
 //API weather
 
-let url = "http://api.weatherapi.com/v1/current.json?key=45be172a2d174c11abf101113211903&q=Los Angeles&aqi=no&lang=fr";
+let urlLosAngeles = "http://api.weatherapi.com/v1/current.json?key=45be172a2d174c11abf101113211903&q=Los Angeles&aqi=no&lang=fr";
 
-fetch(url).then((response) => response.json().then((data) => console.log(data, data.location.name, data.location.region, data.current.temp_c, data.current.condition.text, data.current.condition.icon)));
+let meteoLosAngeles = document.getElementById("meteo");
+
+let iconeMeteo = document.getElementById("icone-meteo");
+
+fetch(urlLosAngeles).then((response) => response.json().then((data) => {
+meteoLosAngeles.innerHTML = `Le ciel de ${data.location.name}, ${data.location.region} est ${data.current.condition.text.toLowerCase()}. La température est de ${data.current.temp_c}°C.`;
+iconeMeteo.src = `http:${data.current.condition.icon}`}));
