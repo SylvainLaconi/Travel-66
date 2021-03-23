@@ -33,11 +33,11 @@ body {
 }
 
 .carousel {
-    box-shadow: 2px 2px 2px 2px #e4d9e8;
     height: 400px;
     width: 900px;
     overflow: hidden;
     margin: auto;
+    border-radius: 20px;
 }
 
 .image-container {
@@ -64,13 +64,23 @@ body {
     height: 20rem;
 }
 
+.programme {
+    display: inline-block;
+    background-color: #e4d9e8;
+    width: 100%;
+    margin: 10px;
+}
+
+.infos {
+    text-align: center;
+    font-style: italic;
+}
+
 .card:hover {
     cursor: pointer;
     transition: transform 1s;
     transform: translateY(-10px);
 }
-
-
 
 h4 {
     display: flex;
@@ -79,15 +89,6 @@ h4 {
     font-size: 20px;
     font-style: oblique;
 }
-
-#prog-info {
-    color: white;
-    text-align: left;
-    font-size: 17px;
-}
-
-
-
 
 @media (max-width: 576px) { 
     .container  {
