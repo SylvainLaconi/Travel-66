@@ -1,0 +1,17 @@
+#parallax {
+    background-image: url("../images/route-66.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    height: 3700px;
+}
+
+.photo-galerie {
+    width: 700px;
+    margin: 20px;
+}
+
+#frame{
+    background-color: ivory;
+    margin: auto;
+}
