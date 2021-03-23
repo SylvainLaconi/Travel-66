@@ -46,6 +46,11 @@ header {
     font-weight: bold;
 }
 
+.active {
+    background-color: #e4d9e8;
+    border-radius: 0.3rem;
+}
+
 /*Menu déroulant*/
 
 .boutonmenuprincipal {
