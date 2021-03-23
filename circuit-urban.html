@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Circuit Urban</title>
     <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/homepage.css">
     <link rel="stylesheet" href="src/circuit-urban.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -28,9 +28,9 @@
             <img src="images/logo.png" alt="logo-travel-66" height="100px">
         </div>
         <nav>
-            <ul>
+            <ul id="navbar-list">
                 <li><a href="index.html" class="navbar">Home</a></li>
-                <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
+                <li class="active"><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
                 <li><a href="circuit-beach.html" class="navbar">Circuit Beach</a></li>
                 <li><a href="infos-pratiques.html" class="navbar">Infos pratiques</a></li>
@@ -38,22 +38,45 @@
             </ul>  
         </nav>
     </header>
+    
+    <div class="heading">
+        <div class="title">
+            <h3>Circuit Urban </h3>
+        </div>
+    </div>
 
-    <div class="container">
-        
-        <div class="card"><iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2329703.4388949876!2d-119.52745640069256!3d36.25215522069089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d34.0522342!2d-118.24368489999999!4m5!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d37.7749295!2d-122.4194155!4m5!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20Nevada%2C%20%C3%89tats-Unis!3m2!1d36.1699412!2d-115.1398296!5e0!3m2!1sfr!2sfr!4v1615908764470!5m2!1sfr!2sfr" width=100% height= 300 style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis asperiores debitis impedit itaque eius libero adipisci officiis fuga tenetur velit fugiat rem commodi, labore distinctio, ducimus odit quidem eum?</div>
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis asperiores debitis impedit itaque eius libero adipisci officiis fuga tenetur velit fugiat rem commodi, labore distinctio, ducimus odit quidem eum?</div>
-        <div class="card carousel-urban">
+    <div class="city">
+        <p>Los Angeles - San Francisco - Las Vegas</p>
+    </div>
+    <div class="grid-container">
+        <div class="grid carousel-urban">
             <button class="carousel-button" id="previous"><</button>
                 <div class="carousel-images">
-                    <img src="//unsplash.it/500/400" alt="test" class="img-urban">
-                    <img src="//unsplash.it/500/400" alt="test" class="img-urban">
-                    <img src="//unsplash.it/500/400" alt="test" class="img-urban">
+                    <img src="images/Los-Angeles_1_900x400.jpg" alt="test" class="img-urban">
+                    <img src="images/san-francisco_900x400.jpg" alt="test" class="img-urban">
+                    <img src="images/Las_Vegas_900x400.jpg" alt="test" class="img-urban">
                 </div>
             <button class="carousel-button" id="next">></button>
         </div>
     </div>
+   
+    <div class="cards-container">
+        
+        <div class="card">
+            <div class="programme">
+                <p class="infos">Informations</p>
+                <p><i class="fa fa-anchor" style="font-size:24px"></i>paragraphe 3</p>
+                <p>paragraphe 4</p>
+                <p>paragraphe 5</p>
+                <p>paragraphe 6</p>
+            </div>
+        </div>
+        <div class="card iframe"><iframe id="iframe"src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2329703.4388949876!2d-119.52745640069256!3d36.25215522069089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d34.0522342!2d-118.24368489999999!4m5!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d37.7749295!2d-122.4194155!4m5!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20Nevada%2C%20%C3%89tats-Unis!3m2!1d36.1699412!2d-115.1398296!5e0!3m2!1sfr!2sfr!4v1615908764470!5m2!1sfr!2sfr" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis asperiores debitis impedit itaque eius libero adipisci officiis fuga tenetur velit fugiat rem commodi, labore distinctio, ducimus odit quidem eum?</div>
+        
+    </div>
+
+        
     <footer>
         <div id="footer-blocks">
             <div class="footer-items">

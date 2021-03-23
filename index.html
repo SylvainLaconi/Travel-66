@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/homepage.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Début de la section HEADER -->
     <header>
         <div class="dropdown">
             <button class="boutonmenuprincipal"><img src="images/icone-menu.png" alt="icone-menu" width="50px"></button>
@@ -27,9 +29,10 @@
         <div id="logo">
             <img src="images/logo.png" alt="logo-travel-66" height="100px">
         </div>
+        <!-- Barre de navigation -->
         <nav>
-            <ul>
-                <li><a href="index.html" class="navbar">Home</a></li>
+            <ul id="navbar-list">
+                <li class="active"><a href="index.html" class="navbar">Home</a></li>
                 <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
                 <li><a href="circuit-beach.html" class="navbar">Circuit Beach</a></li>
@@ -39,7 +42,8 @@
             </ul>  
         </nav>
     </header>
-    <div>
+    <div id="main-container">
+        <!-- Section du carrousel principal -->
         <section>
             <div class="carousel">
                 <div class="image-container" id="imgs">
@@ -69,13 +73,22 @@
                   />
                 </div>
         </section>
-        <section id="presentation">
-            <h2>Hello voyageur !</h2>
-            <p>Bienvenue sur notre site dédié aux circuits dans l'Ouest américain.</p>
-            <p>Nous sommes une équipe de cinq passionnés de voyages.</p>
-            <p>Nous avons créé Travel 66 pour vous accompagner dans l'organisation de votre roadtrip.</p>
-        </section>
-    </div>  
+        <!-- Section corps de texte -->
+        <section id="bottom-container">
+            <div id="presentation">
+                <h2>Hello voyageur !</h2>
+                <p>Bienvenue sur notre site dédié aux circuits dans l'Ouest américain.
+                Nous sommes une équipe de cinq passionnés de voyages.
+                Nous avons créé Travel 66 pour vous accompagner dans l'organisation de votre roadtrip.</p>
+            </div>
+            <div id="meteo-container">
+                <h2>Quel temps fait-il sur la "West-Coast" ?</h2>
+                <span id="meteo"></span><br />
+                <img src="" alt="icone-meteo" id="icone-meteo">
+            </div>
+        </section>   
+    </div> 
+    <!-- Début du footer -->
     <footer>
         <div id="footer-blocks">
             <div class="footer-items">

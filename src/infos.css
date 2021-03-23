@@ -1,5 +1,5 @@
 h1 {
-    margin-left: 6%;
+    text-align: center;
 }
 .infos {
     display:flex;
@@ -9,21 +9,22 @@ h1 {
 
 /*Cadres*/
 .article {
-    border: 1px solid;
-    border-color: black;
     width: 400px;
     margin-bottom: 5%;
-    background-color:#e4d9e8;
+    background-color:#b8d1f7af;
+    border-radius: 3%;
 }
 
 /* Images*/ 
 .article_image{
     display: flex;
     justify-content: center;
+    
 }
 .article_image img{
     max-width: 80%;
     padding: 10px;
+    border-radius: 10%;
 }
 
 /* Texte*/
@@ -36,6 +37,26 @@ h1 {
 .article_text {
     padding-left: 15px;
     padding-right: 15px;
+   }
+
+ /* Bouton back-to-top */
+
+.top_button img {
+    max-height: 90px;
+    max-width: 90px;
+    border-radius: 50%;
+ } 
+
+ #backToTop_infos { 
+    border:none;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+  
+#backToTop_infos:hover {
+    background-color: #8ea1e1; /* Add a dark-grey background on hover */
 }
 
 
@@ -51,7 +72,8 @@ h1 {
         text-align: center;
     }
     h1 {
-        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
     }
     .article_image img{
         border-radius: 50%;
@@ -69,7 +91,8 @@ h1 {
         text-align: center;
     }
     h1 {
-        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
     }
 }
 

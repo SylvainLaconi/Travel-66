@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="src/homepage.css">
     <link rel="stylesheet" href="src/contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,19 +30,20 @@
             <img src="images/logo.png" alt="logo-travel-66" height="100px">
         </div>
         <nav>
-            <ul>
+            <ul id="navbar-list">
                 <li><a href="index.html" class="navbar">Home</a></li>
                 <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
                 <li><a href="circuit-beach.html" class="navbar">Circuit Beach</a></li>
                 <li><a href="infos-pratiques.html" class="navbar">Infos pratiques</a></li>
-                <li><a href="contact.html" class="navbar">Contact</a></li>
+                <li class="active"><a href="contact.html" class="navbar">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="contact">
-        <div class="info">
+
+        <div class="info contact_bloc">
             <div class="block-heading">
                 <h2 class="text-info">Informations</h2>
             </div>
@@ -51,7 +52,7 @@
                 <h4>Adresse de l'entreprise</h4>
                 <p>22 Rue de Grenelle, 75007 Paris</p>
             </div>
-            <div class="email">
+            <div class="email_entreprise">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
                 <p>travel_us@gmail.com</p>
@@ -62,33 +63,37 @@
                 <p>+336 845 365 95</p>
             </div>
         </div>
-        <div class="section_envoi">
+
+        <div class="contact_bloc_img">
+            <img class="image_contact" src="images/image_contact.jpg" alt="">
+        </div>
+
+        <div class="envoi contact_bloc">
             <div class="block-heading">
-                <h2 class="text-info"></h2>
+                <h2 class="text-info">Ecrivez-nous !</h2>
             </div>
             <form method="POST">
                 <div class="">
-                    <label for="circuit-select">Choississez votre sujet :</label>
-                    <select name="pets" id="circuit-select">
+                    <h4 for="circuit-select">Choississez votre sujet :</h4>
+                    <select name="circuit" id="circuit-select">
                         <option value="">--</option>
                         <option value="urban">Circuit Urban</option>
-                        <option value="cat">Circuit Wild</option>
-                        <option value="hamster">Circuit Urban</option>
-                        <option value="parrot">Sujet</option>
+                        <option value="wild">Circuit Wild</option>
+                        <option value="beach">Circuit Beach</option>
+                        <option value="autres">Autres</option>
                     </select>
                 </div>
                 <div class="">
-                    <label for="subject">Demande :</label>
-                    <input class="form-control item" name="subject" type="text" id="subject"
-                        placeholder="demande de réservation pour le ..." value="">
+                    <h4 for="email">votre Email :</h4>
+                    <input class="form-input" name="subject" type="text" id="email" value="">
                 </div>
                 <div class="">
-                    <label for="message">Message :</label>
-                    <textarea class="form-control" name="message" id="message"
-                        placeholder="j'ai besoin de quelqu'un pour s'occuper de ..."></textarea>
+                    <h4 for="message">Message :</h4>
+                    <textarea class="form-input" name="message" id="message" placeholder="" rows="6"
+                        cols="40"></textarea>
                 </div>
                 <input type="hidden" value="" name="id_session">
-                <button class="" type="submit">Validez</button>
+                <button class="button" type="submit">Envoyer</button>
             </form>
         </div>
     </div>

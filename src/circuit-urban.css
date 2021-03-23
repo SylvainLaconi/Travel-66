@@ -1,19 +1,72 @@
 /* Section circuits */ 
-.container {
-    grid-template-columns: 500px 500px;
-    display: grid;
-    grid-gap: 1rem;
-    justify-content: center;
+.heading {
+    margin: 0 auto;
+
+}
+
+.title h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.city {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
 }
 
 
-.card {
+.grid-container{
+    grid-template-columns: 900px ;
+    grid-template-rows: 400px;
+    display: grid;
+    justify-content: center;
+    margin-top: 25px auto;
+    margin-bottom: 25px;
+}
+
+.cards-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+ }
+
+ .grid {
     padding: 0.5em;
-    background-color: rgba(228, 237, 241, 0.637);
-    border: 2px solid rgb(46, 120, 163);
+    background-color: rgba(238, 228, 241, 0.637);
+    border: 2px solid rgba(238, 228, 241, 0.637);
     border-radius: 1rem;
   
 }
+.card {
+    padding: 0.5em;
+    background-color: rgba(228, 237, 241, 0.637);
+    border: 2px solid rgba(238, 228, 241, 0.637);
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    height: 20em;
+}
+
+.programme{
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+}
+
+.fa{
+    margin-right: 5px;
+}
+.infos{
+    text-align: center;
+    font-style: italic;
+}
+
 .card:hover{
     cursor: pointer;
     transition: transform 1s;
@@ -72,11 +125,22 @@
 
 @media (max-width: 576px) { 
     
-    .container {
-        grid-template-columns: 50%;
+    .title h1 {
+        font-size:3rem;
+        text-align: center;
+    }
+    .city ul{
+        font-size: 1em;
+        display: inherit;
+    }
+    .cards-container {
+        grid-template-columns: 100%;
         display: grid;
         grid-gap: 2rem;
         justify-content: center;
+    }
+    .grid-container{
+        display: none;
     }
 
     .carousel-urban {
@@ -84,7 +148,6 @@
     display: flex;
     overflow: hidden;
     position: relative;
-    display: none;
     }
 
     .carousel-images{

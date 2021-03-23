@@ -21,7 +21,7 @@ header {
     text-align: center;
 }
 
-ul {
+#navbar-list {
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,7 +31,7 @@ ul {
 }
 
 
-ul li {
+#navbar-list li {
     padding: 5px 5px 5px 5px;
     text-transform: uppercase;
 }
@@ -44,6 +44,11 @@ ul li {
 .navbar:hover {
     color: cadetblue;
     font-weight: bold;
+}
+
+.active {
+    background-color: #e4d9e8;
+    border-radius: 0.3rem;
 }
 
 /*Menu déroulant*/
@@ -133,12 +138,13 @@ footer{
 }
 .hidden-span {
     display: block;
+    margin-bottom: 20px;
 }
 
 /*X-Small devices (under 576px)*/
 
 @media (max-width: 576px) { 
-    ul{
+    #navbar-list{
         display: none;
     }
 
@@ -165,36 +171,27 @@ footer{
     #permanent-span {
         margin-bottom: 10px;
     }
-
-    .carousel{
-        display: none;
-    }
  }
 
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) and (max-width: 768px) { 
-    ul{
+    #navbar-list{
         flex-direction: column;
     }
 
-    ul li {
+    #navbar-list li {
         width: 100%;
     }
-
-    .carousel{
-        display: none;
-    }
-
 }
 /*Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 992px) { 
-    ul{
+    #navbar-list{
         flex-direction: column;
     }
 
-    ul li {
+    #navbar-list li {
         width: 100%;
     }
 }

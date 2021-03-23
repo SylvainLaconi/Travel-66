@@ -21,6 +21,61 @@
 @media (min-width: 1200px) {
     .contact {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
  }
+.contact {
+    margin: 5%;
+    max-height: 60%;
+}
+.contact_bloc {
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(180, 180, 180);
+    border-radius: 2%;  
+    min-width: 20%;
+}
+/* 
+.contact_bloc:hover {
+    opacity: 0.80;
+} */
+.contact_bloc_img:hover {
+    opacity: 0.80;
+}
+
+.contact_bloc_img {
+    padding: 0.5%;   
+    padding-top: 1.5%;
+}
+.image_contact {
+    border-radius: 2%; 
+
+}
+.contact_bloc_img {
+    animation-name: apparition;
+    animation-duration: 5s;
+}
+@keyframes apparition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#email {
+    min-width: 300px;
+}
+
+.button {
+    background-color:rgb(122 121 186);
+    border: none;
+    color: white;
+    margin-top: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.text-info {
+    margin: 2px;
+}
