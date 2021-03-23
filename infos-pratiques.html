@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infos Pratiques</title>
+    <title>Infos pratiques</title>
     <link rel="stylesheet" href="src/infos.css">
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +29,7 @@
             <img src="images/logo.png" alt="logo-travel-66" height="100px">
         </div>
         <nav>
-            <ul>
+            <ul id="navbar-list">
                 <li><a href="index.html" class="navbar">Home</a></li>
                 <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
@@ -104,6 +104,13 @@
         </div>
 
     </section>
+
+    <!--Bouton Back to top-->
+        <div class="top_button">
+            <img src="images/roundArrow.png" alt="flèche vers le haut" id="backToTop_infos" onclick="topFunction()">
+        </div>
+   
+
     <footer>
         <div id="footer-blocks">
             <div class="footer-items">
@@ -137,7 +144,7 @@
         </div>
         <div id="copyright">© 2021 Travel66</div>
     </footer>
-
+    <script src="src/infos.js"></script>
 </body>
 
 </html>
