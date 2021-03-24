@@ -41,3 +41,13 @@ let iconeMeteo = document.getElementById("icone-meteo");
 fetch(urlLosAngeles).then((response) => response.json().then((data) => {
 meteoLosAngeles.innerHTML = `Le ciel de ${data.location.name}, ${data.location.region} est ${data.current.condition.text.toLowerCase()}. La température est de ${data.current.temp_c}°C.`;
 iconeMeteo.src = `http:${data.current.condition.icon}`}));
+
+
+//Effet parallax
+
+const parallax = document.getElementById('parallax');
+
+window.addEventListener('scroll', () => {
+  parallax.style.backgroundPositionY = -window.scrollY / 2 + "px"; 
+})
+
