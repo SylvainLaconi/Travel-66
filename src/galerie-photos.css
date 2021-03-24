@@ -14,11 +14,11 @@
 
 
 .photo-galerie {
-    width: 100%;
+    width: 95%;
     height: auto;
     margin: auto;
     background-color: ivory;
-    padding: 10px;
+    padding: 1.5%;
 }
 
 .photo-container {
@@ -52,8 +52,14 @@ h2{
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) and (max-width: 768px) {
+
+    .photo-galerie {
+        padding: 10px;
+        width: 480px;
+    }
     .photo-container {
         min-width: 500px;
+        margin: 15px 0;
     }
 
  }
@@ -62,8 +68,14 @@ h2{
 
 @media (min-width: 768px) and (max-width: 992px) { 
 
+    .photo-galerie {
+        padding: 10px;
+        width: 680px;
+    }
+
     .photo-container {
         min-width: 700px;
+        margin: 15px 0;
     }
  
 
@@ -72,8 +84,14 @@ h2{
 /*Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) and (max-width: 1200px) { 
+
+    .photo-galerie {
+        padding: 10px;
+        width: 930px;
+    }
+
     .photo-container {
-        min-width: 900px;
+        min-width: 950px;
     }
  
  }
@@ -81,6 +99,7 @@ h2{
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
+
     
 
 }
