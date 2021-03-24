@@ -3,15 +3,19 @@
     background-size: cover;
     background-repeat:no-repeat;
     background-position-x: center;
-    height: 3700px;
+    height: 2775px;
+    display: flex;
 }
 
 .photo-galerie {
-    width: 700px;
-    margin: 20px;
+    width: 40%;
+    height: auto;
+    margin: 30px 30px 0 30px;
+    background-color: ivory;
+    padding: 10px;
 }
 
-#frame{
-    background-color: ivory;
-    margin: auto;
+.photo-container {
+    width: 40%;
+    height: auto;
 }

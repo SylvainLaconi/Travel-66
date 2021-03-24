@@ -48,6 +48,6 @@ iconeMeteo.src = `http:${data.current.condition.icon}`}));
 const parallax = document.getElementById('parallax');
 
 window.addEventListener('scroll', () => {
-  parallax.style.backgroundPositionY = -window.scrollY / 1.5 + "px"; 
+  parallax.style.backgroundPositionY = -window.scrollY / 2 + "px"; 
 })
 
