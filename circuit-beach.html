@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuit Beach</title>
+    <title>Circuit Wild</title>
+    <link rel="stylesheet" href="src/style-beach.css">
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
     <header>
         <div class="dropdown">
             <button class="boutonmenuprincipal"><img src="images/icone-menu.png" alt="icone-menu" width="50px"></button>
@@ -26,7 +31,7 @@
             <img src="images/logo.png" alt="logo-travel-66" height="100px">
         </div>
         <nav>
-            <ul>
+            <ul id="navbar-list">
                 <li><a href="index.html" class="navbar">Home</a></li>
                 <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
@@ -36,9 +41,68 @@
             </ul>  
         </nav>
     </header>
-    <div>
-        
+
+    <section>
+        <div class="circuit-title">
+        <h1>Circuit Beach</h1>
     </div>
+        <p id="circuit-subtitle">Big Sur - Carmel - Santa Barbara</p>
+    </section>
+ 
+    <section class="section-carousel">
+        <div class="carousel">
+            <div class="image-container" id="imgs">
+
+                <img
+                src="images/CarmelBeach.jpeg"
+                alt="carmel-beach" class="img-carousel" />
+
+
+                <img
+                src="images/BigSur.jpeg"
+                alt="big-sur" class="img-carousel"/>
+
+              <img
+                src="images/SantaBarbara.jpeg"
+                alt="santa-barbara" class="img-carousel"/>
+
+            </div>
+        </section>
+
+
+    <section class="card-container">
+        <div class="card">
+            
+                <h2 class="infos-h2">Programme</h2>
+                <div>
+                    <p class="paragraphe"><i class="fas fa-plane"></i>Jour 1 : C'est le grand départ, envol pour la Californie!</p>
+                    <p class="paragraphe"><i class="fas fa-sun"></i></i>Jour 2 et 3 : Début du circuit avec la magnifique plage de Big Sur</p>
+                    <p class="paragraphe"><i class="fas fa-umbrella-beach"></i>Jour 4: Découverte de Carmel beach, à quelques kilomètres de Big Sur</p>
+                    <p class="paragraphe"><i class="fas fa-water"></i>Jour 5 et 6: Direction le Sud et Santa Barbara beach</p>
+                    <p class="paragraphe"><i class="fas fa-plane"></i>Jour 7 : Il est temps de rentrer avec des souvenirs plein la tête!</p>
+                </div>
+        </div>
+       
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d3303458.000574606!2d-121.85847954558064!3d36.04389553162878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x80e914c76f2d83d5%3A0xc8d13a64d7ba7648!2sSanta%20Barbara%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d34.4208305!2d-119.69819009999999!4m5!1s0x808de63ebf5b219f%3A0x223e49989e2c65a6!2sCarmel%20Beach%2C%20Carmel-by-the-Sea%2C%20Californie%2093923%2C%20%C3%89tats-Unis!3m2!1d36.550238799999995!2d-121.9291215!4m5!1s0x808de8a7780e4d77%3A0x37e8d859caefac61!2sBig%20Sur%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d36.2704233!2d-121.80805559999999!5e0!3m2!1sfr!2sfr!4v1616582978405!5m2!1sfr!2sfr" width="100%" height="100%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="card">
+            
+  
+                <h2 class="infos-h2">Informations</h2>
+                <div>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Détente assurée au bord des plages californiennes!</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Circuit de 7 jours</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Séjour idéal à faire en famille</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Pas de condition physique requise</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Fortes températures selon la période de départ</p>
+
+                </div>
+      
+        </div>
+
+    </section>
     <footer>
         <div id="footer-blocks">
             <div class="footer-items">
@@ -71,6 +135,7 @@
             </div>
         </div>
         <div id="copyright">© 2021 Travel66</div>
-    </footer>   
+    </footer>
+<script src="src/cb-script.js"></script>
 </body>
 </html>
