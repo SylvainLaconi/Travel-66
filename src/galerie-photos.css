@@ -1,0 +1,105 @@
+#parallax {
+    background-image: url("../images/route-66.jpg");
+    background-size: cover;
+    background-repeat:repeat;
+    background-position-x: center;
+    height: auto;
+}
+
+#galerie-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.photo-galerie {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: ivory;
+    padding: 1.5%;
+}
+
+.photo-container {
+    width: 45%;
+    margin: 20px 0;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+}
+
+/*X-Small devices (under 576px)*/
+
+@media (max-width: 576px) { 
+
+    .photo-galerie {
+        padding: 5px;
+        width: 340px;
+    }
+
+    .photo-container {
+        min-width: 350px;
+        margin: 10px 0;
+    }
+
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .photo-galerie {
+        padding: 10px;
+        width: 480px;
+    }
+    .photo-container {
+        min-width: 500px;
+        margin: 15px 0;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 992px) { 
+
+    .photo-galerie {
+        padding: 10px;
+        width: 680px;
+    }
+
+    .photo-container {
+        min-width: 700px;
+        margin: 15px 0;
+    }
+ 
+
+ }
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+
+    .photo-galerie {
+        padding: 10px;
+        width: 930px;
+    }
+
+    .photo-container {
+        min-width: 950px;
+    }
+ 
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+
+    
+
+}
