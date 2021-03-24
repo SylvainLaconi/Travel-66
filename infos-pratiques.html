@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                 <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
                 <li><a href="circuit-beach.html" class="navbar">Circuit Beach</a></li>
-                <li class="active"><a href="infos-pratiques.html" class="navbar">Infos pratiques</a></li>
+                <li><a href="infos-pratiques.html" class="navbar">Infos pratiques</a></li>
                 <li><a href="contact.html" class="navbar">Contact</a></li>
             </ul>  
         </nav>
@@ -51,16 +52,29 @@
                 <img src="images/travelSquare.jpg" alt="avion sur une carte du monde">
             </div>
             <div class="article_title"> 
-                <p> Transports </p> 
+                <h2> Transports </h2> 
             </div>
-
-            <div class="article_text"> 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
+            <div class="theme_title">
+                <p id="avion_title">Avion</p>
+                <p id="voiture_title">Voiture</p>
+                <p id="metro_title">Métro/Bus</p>
+            </div>
+            <div class="article_text" id="avion_text"> 
+                <p> 1 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
                     lacinia lorem. Praesent consectetur cursus mollis. Praesent suscipit facilisis nunc at suscipit. Fusce
                     sit amet congue turpis. Quisque et dolor sed nisi condimentum porttitor vitae non odio. Maecenas ut
                     lacus et lorem maximus pharetra sed at sem. Vivamus aliquet consequat elit vel vestibulum. 
                 </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
+            </div>
+            <div class="article_text" id="voiture_text"> 
+                <p> 2 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
+                    lacinia lorem. Praesent consectetur cursus mollis. Praesent suscipit facilisis nunc at suscipit. Fusce
+                    sit amet congue turpis. Quisque et dolor sed nisi condimentum porttitor vitae non odio. Maecenas ut
+                    lacus et lorem maximus pharetra sed at sem. Vivamus aliquet consequat elit vel vestibulum. 
+                </p>
+            </div>
+            <div class="article_text" id="metro_text"> 
+                <p> 3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
                     lacinia lorem. Praesent consectetur cursus mollis. Praesent suscipit facilisis nunc at suscipit. Fusce
                     sit amet congue turpis. Quisque et dolor sed nisi condimentum porttitor vitae non odio. Maecenas ut
                     lacus et lorem maximus pharetra sed at sem. Vivamus aliquet consequat elit vel vestibulum. 
@@ -73,11 +87,22 @@
                 <img src="images/demarchesSquare.jpg" alt="passeport">
             </div>
             <div class="article_title"> 
-                <p> Démarches administratives </p> 
+                <h2> Démarches administratives </h2> 
             </div>
-
-            <div class="article_text"> 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
+            <div class="theme_title">
+                <p data-tab="0" class="rubrique2" class="titleClicked" id="passeport_title">Passeport</p>
+                <p data-tab="1" class="rubrique2" id="documents_title">Documents</p>
+            </div>
+           
+            <div class="article_text" class="active" id="demarchesText0"> 
+                <p> 1 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
+                    lacinia lorem. Praesent consectetur cursus mollis. Praesent suscipit facilisis nunc at suscipit. Fusce
+                    sit amet congue turpis. Quisque et dolor sed nisi condimentum porttitor vitae non odio. Maecenas ut
+                    lacus et lorem maximus pharetra sed at sem. Vivamus aliquet consequat elit vel vestibulum. 
+                </p>
+            </div>
+            <div class="article_text" id="demarchesText1"> 
+                <p> 2 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non molestie erat. Curabitur eu
                     lacinia lorem. Praesent consectetur cursus mollis. Praesent suscipit facilisis nunc at suscipit. Fusce
                     sit amet congue turpis. Quisque et dolor sed nisi condimentum porttitor vitae non odio. Maecenas ut
                     lacus et lorem maximus pharetra sed at sem. Vivamus aliquet consequat elit vel vestibulum. 
@@ -91,7 +116,7 @@
                 <img src="images/conseilsSquare.jpg" alt="plan avec une loupe" >
             </div>
             <div class="article_title"> 
-                <p> Conseils sur place </p> 
+                <h2> Conseils sur place </h2> 
             </div>
 
             <div class="article_text"> 
@@ -107,7 +132,7 @@
 
     <!--Bouton Back to top-->
         <div class="top_button">
-            <img src="images/roundArrow.png" alt="flèche vers le haut" id="backToTop_infos" onclick="topFunction()">
+            <img src="images/roundArrow.png" alt="flèche vers le haut" id="backToTop_infos">
         </div>
    
 
