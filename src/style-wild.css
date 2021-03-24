@@ -52,7 +52,7 @@ body {
 
 /* Cards */
 
-.container {
+.card-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 80px;
@@ -105,12 +105,28 @@ h4 {
 }
 
 @media (max-width: 576px) { 
-    .container  {
+    .card-container  {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
     }
-    .carousel {
+
+    #circuit-subtitle {
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    iframe {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .card {
+        width: 90%;
+    }
+    .section-carousel {
         display: none;
     }
 }
