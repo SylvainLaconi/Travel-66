@@ -40,39 +40,16 @@
             </ul>
         </nav>
     </header>
-
+    <div>
+        <h1>Contact</h1>
+        <div id="envoi"></div>
+    </div>
     <div class="contact">
-
-        <div class="info contact_bloc">
-            <div class="block-heading">
-                <h2 class="text-info">Informations</h2>
-            </div>
-            <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Adresse de l'entreprise</h4>
-                <p>22 Rue de Grenelle, 75007 Paris</p>
-            </div>
-            <div class="email_entreprise">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>travel_us@gmail.com</p>
-            </div>
-            <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Téléphone :</h4>
-                <p>+336 845 365 95</p>
-            </div>
-        </div>
-
-        <div class="contact_bloc_img">
-            <img class="image_contact" src="images/image_contact.jpg" alt="">
-        </div>
-
         <div class="envoi contact_bloc">
             <div class="block-heading">
                 <h2 class="text-info">Ecrivez-nous !</h2>
             </div>
-            <form method="POST">
+            <form id="formulaire" method="POST">
                 <div class="">
                     <h4 for="circuit-select">Choississez votre sujet :</h4>
                     <select name="circuit" id="circuit-select">
@@ -93,9 +70,37 @@
                         cols="40"></textarea>
                 </div>
                 <input type="hidden" value="" name="id_session">
-                <button class="button" type="submit">Envoyer</button>
+                <button onclick="envoyer(event)" class="button" type="submit">Envoyer</button>
             </form>
         </div>
+
+
+
+        <div class="contact_bloc_img">
+            <img class="image_contact" src="images/image_contact.jpg" alt="">
+        </div>
+
+        <div class="info_bloc">
+            <div class="block-heading">
+                <h2 class="text-info">Informations</h2>
+            </div>
+            <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Adresse de l'entreprise</h4>
+                <p>22 Rue de Grenelle, 75007 Paris</p>
+            </div>
+            <div class="email_entreprise">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>travel_us@gmail.com</p>
+            </div>
+            <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Téléphone :</h4>
+                <p>+336 845 365 95</p>
+            </div>
+        </div>
+
     </div>
     <footer>
         <div id="footer-blocks">
@@ -130,7 +135,7 @@
         </div>
         <div id="copyright">© 2021 Travel66</div>
     </footer>
-    <script src="src/script.js"></script>
+    <script src="src/contact.js"></script>
 </body>
 
 </html>

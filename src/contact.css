@@ -1,81 +1,137 @@
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
-    
- }
+@media (max-width: 576px) {
+  .contact_bloc_img {
+    display: none;
+  }
+}
 
- @media (min-width: 576px) and (max-width: 768px)  { 
-    
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact_bloc_img {
+    display: none;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 992px) { 
-
- }
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact_bloc_img {
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) { 
-
- }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .contact_bloc_img {
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .contact {
-        display: flex;
-        justify-content: center;
-    }
- }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
 .contact {
-    margin: 5%;
-    max-height: 60%;
+  margin: 5%;
+  margin-top: 0;
+  max-height: 80%;
 }
 .contact_bloc {
-    text-align: center;
-    padding: 2%;
-    background-color: rgb(180, 180, 180);
-    border-radius: 2%;  
-    min-width: 20%;
+  text-align: center;
+  padding: 2%;
+  background-color: rgb(180, 180, 180);
+  border-radius: 2%;
+  min-width: 20%;
 }
-/* 
-.contact_bloc:hover {
-    opacity: 0.80;
-} */
+
+.info_bloc {
+  text-align: center;
+  padding: 2%;
+  border-radius: 2%;
+  min-width: 20%;
+}
+
 .contact_bloc_img:hover {
-    opacity: 0.80;
+  opacity: 0.8;
 }
 
 .contact_bloc_img {
-    padding: 0.5%;   
-    padding-top: 1.5%;
+  padding: 0.5%;
+  padding-top: 1.5%;
 }
 .image_contact {
-    border-radius: 2%; 
-
+  box-shadow: 2px 2px 2px 2px grey;
 }
 .contact_bloc_img {
-    animation-name: apparition;
-    animation-duration: 5s;
+  animation-name: apparition;
+  animation-duration: 5s;
 }
 @keyframes apparition {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #email {
-    min-width: 300px;
+  min-width: 300px;
 }
 
 .button {
-    background-color:rgb(122 121 186);
-    border: none;
-    color: white;
-    margin-top: 5px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: rgb(122 121 186);
+  border: none;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .text-info {
-    margin: 2px;
+  margin: 2px;
+}
+
+#envoi {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  max-height: 20px;
+}
+
+.img_send {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 70px;
+  width: auto;
+}
+#text_mail {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  color: #463d37;
+  text-align: center;
+}
+h2 {
+  font-family: "Dancing Script";
+  font-size: 1.5rem;
+  color: #463d37;
+  text-align: center;
+}
+h3 {
+  font-family: "Dancing Script";
+  font-size: 1rem;
+  color: #463d37;
+  text-align: center;
 }
