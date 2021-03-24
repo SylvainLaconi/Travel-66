@@ -26,6 +26,12 @@
     margin: 20px 0;
 }
 
+.photo-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s linear;
+}
+
+
 h1{
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
