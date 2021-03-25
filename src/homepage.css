@@ -1,4 +1,4 @@
-h1 {
+h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     color:#463d37;
@@ -41,6 +41,10 @@ h1 {
     font-size: 1rem;
 }
 
+#presentation > p {
+    text-align: justify;
+}
+
 #meteo-container {
     width: 50%;
     text-align: center;
@@ -68,6 +72,10 @@ h1 {
         width: 100%;
         text-align: center, justify;
     }
+
+    #presentation > p {
+        padding: 0 20px;
+    }
     
     #meteo-container {
         width: 100%;
@@ -88,6 +96,10 @@ h1 {
     #presentation {
         width: 100%;
         text-align: center, justify;
+    }
+
+    #presentation > p {
+        padding: 0 20px;
     }
     
     #meteo-container {

@@ -12,7 +12,6 @@
     flex-wrap: wrap;
 }
 
-
 .photo-galerie {
     width: 95%;
     height: auto;
@@ -30,7 +29,6 @@
     transform: scale(1.1);
     transition: transform 0.3s linear;
 }
-
 
 h1{
     font-family: 'Dancing Script', cursive;
@@ -105,7 +103,5 @@ h1{
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-
-    
 
 }

@@ -20,19 +20,19 @@ Charte CSS:
 
 Titres H1:
 font-family : 'Dancing Script' // <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-font-size : 2rem
+font-size : 3rem
 color : #463d37
 text-align : center
 
 Titres H2:
 font-family : 'Dancing Script' // <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-font-size : 1.5rem
+font-size : 2rem
 color : #463d37
 text-align : center
 
 Titres H3:
 font-family : 'Dancing Script' // <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-font-size : 1rem
+font-size : 1.5rem
 color : #463d37
 text-align : center
 
