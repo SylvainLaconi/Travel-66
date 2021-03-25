@@ -1,6 +1,23 @@
 # Travel-66
 Projet 1 - WCS - 0321 - REMOTE : Sarah, Marie-Anne, Milad, David, Sylvain
 
+Objectifs du projet :
+- Réaliser un site web vitrine en 2 semaines en HTML/CSS
+- Créer le wireframe
+- Le site doit être responsive
+- Mettre en pratique nos connaissances de GIT/GITHUB
+- Intégrer des animations simples en Javascript
+
+
+Liste des animations Javascript intégrées dans le projet :
+- ajouts de carrousels photos
+- intégration d'un service web météo avec la méthode API fetch
+- intégration d'animation du DOM (bouton back-to-top et message de validation d'un formulaire)
+- utilisation d'un effet parallax
+
+
+Charte CSS:
+
 Titres H1:
 font-family : 'Dancing Script' // <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 font-size : 2rem
