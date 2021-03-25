@@ -12,9 +12,8 @@ body {
     font-weight: bold;
     text-align: center;
     font-family: 'Dancing Script' ;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #463d37;
-
 }
 
 .circuit-title > h1 {
@@ -28,7 +27,6 @@ body {
     margin: 10px auto 20px auto;
     font-size: 25px;
     font-weight: bold;
-
 }
 
 
@@ -95,8 +93,13 @@ body {
     overflow: hidden;
     text-align: center;
     font-family: 'Dancing Script' ;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #463d37;
+}
+
+.paragraphe {
+    font-family: 'Montserrat';
+    font-size: 1rem;
 }
 
 @keyframes infos {
@@ -142,7 +145,6 @@ body {
         display: none;
     }
 }
-
 
 @media (min-width: 577px) and (max-width: 992px) { 
  }
