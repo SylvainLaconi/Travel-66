@@ -12,7 +12,6 @@
     flex-wrap: wrap;
 }
 
-
 .photo-galerie {
     width: 95%;
     height: auto;
@@ -26,7 +25,12 @@
     margin: 20px 0;
 }
 
-h2{
+.photo-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s linear;
+}
+
+h1{
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     color:white;
@@ -99,7 +103,5 @@ h2{
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-
-    
 
 }
