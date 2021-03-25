@@ -1,4 +1,4 @@
-# Travel-66
+# Travel-66 : site web spécialisé dans l'organisation de circuits touristiques dans l'ouest américain ✈️ 🧳 🇺🇸 🗺 🏜 🏖
 Projet 1 - WCS - 0321 - REMOTE : Sarah, Marie-Anne, Milad, David, Sylvain
 
 Objectifs du projet :
@@ -45,7 +45,7 @@ line-height : 1.5
 text-align : justify
 
 Box:
-ont-family : 'Montserrat' // <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+font-family : 'Montserrat' // <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 font-size : 1rem
 color : black
 line-height : 1.5
