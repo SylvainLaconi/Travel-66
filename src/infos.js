@@ -20,46 +20,31 @@ document.addEventListener("scroll", () => {
 }
 )
 
-// Rubrique Avion
 
-const avionClick = document.getElementById("avion_title");
-const avionText = document.getElementById("avion_text");
+// Transports 
 
-avionClick.addEventListener("click", () => {
-        avionText.style.display = "block"
-        voitureText.style.display = "none"
-        metroText.style.display = "none"
-    }
-)
+let selectTransport = document.querySelectorAll("#transports .theme_title p");
+console.log(selectTransport);
 
-// Rubrique voiture
-
-const voitureClick = document.getElementById("voiture_title");
-const voitureText = document.getElementById("voiture_text");
-
-voitureClick.addEventListener("click", () => {
-        voitureText.style.display = "block"
-        avionText.style.display = "none"
-        metroText.style.display = "none"
-    }
-)
-
-// Rubrique Métro
-const metroClick = document.getElementById("metro_title");
-const metroText = document.getElementById("metro_text");
-
-metroClick.addEventListener("click", () => {
-        metroText.style.display = "block"
-        avionText.style.display = "none"
-        voitureText.style.display = "none"
-    }
-)
-
+for (let p of selectTransport) {
+  p.addEventListener("click", function () {
+    //Récupérer le numéro du titre qui est cliqué
+    let num = p.getAttribute("data-tab1");
+    //Retirer la classe "titre" du précédent titre actif
+    document.querySelector(".titleClicked1").classList.remove("titleClicked1");
+    //Affecter la classe "titre" au titre qui est cliqué
+    p.classList.add("titleClicked1");
+    //Retirer la classe "active" du précédent DIV
+    document.querySelector(".activeTransports").classList.remove("activeTransports");
+    //Affecter la classe "active" au DIV dont l'ID a le même numéro que le titre
+    document.querySelector("#transportsText" + num).classList.add("activeTransports");
+  });
+}
 
 //test class active card 2 - Démarches
 
-// boucle des enfers T_T
-let selectTab = document.querySelectorAll(".rubrique2");
+// boucle des enfers T_T ... QUI FONCTIONNE !
+let selectTab = document.querySelectorAll("#demarches .theme_title p");
 console.log(selectTab);
 
 for (let p of selectTab) {
@@ -71,58 +56,30 @@ for (let p of selectTab) {
     //Affecter la classe "titre" au titre qui est cliqué
     p.classList.add("titleClicked");
     //Retirer la classe "active" du précédent DIV
-    document.querySelector(".active").classList.remove("active");
+    document.querySelector(".activeDemarches").classList.remove("activeDemarches");
     //Affecter la classe "active" au DIV dont l'ID a le même numéro que le titre
-    document.querySelector("#demarchesText" + num).classList.add("active");
+    document.querySelector("#demarchesText" + num).classList.add("activeDemarches");
   });
 }
 
+// Conseils sur place
+let selectConseils = document.querySelectorAll("#conseils .theme_title p");
+console.log(selectConseils);
 
-/* boucle #Hell avec les byClassName & byId mais ça marche pas
-let selectTab = document.getElementsByClassName("rubrique2");
-
-for (let p of selectTab) {
+for (let p of selectConseils) {
   p.addEventListener("click", function () {
     //Récupérer le numéro du titre qui est cliqué
-    let num = p.getAttribute("data-tab");
+    let num = p.getAttribute("data-tab2");
     //Retirer la classe "titre" du précédent titre actif
-    document.getElementsByClassName("titleClicked").classList.remove("titleClicked");
+    document.querySelector(".titleClicked2").classList.remove("titleClicked2");
     //Affecter la classe "titre" au titre qui est cliqué
-    p.classList.add("titleClicked");
+    p.classList.add("titleClicked2");
     //Retirer la classe "active" du précédent DIV
-    document.getElementsByClassName("active").classList.remove("active");
+    document.querySelector(".activeConseils").classList.remove("activeConseils");
     //Affecter la classe "active" au DIV dont l'ID a le même numéro que le titre
-    document.getElementById("demarchesText" + num).classList.add("active");
+    document.querySelector("#conseilsText" + num).classList.add("activeConseils");
   });
 }
-*/
-
-
-
-/*
-// Rubrique passeport very simple qui fonctionne 
-
-const passeportClick = document.getElementById("passeport_title");
-const passeportText = document.getElementById("passeport_text");
-
-passeportClick.addEventListener("click", () => {
-        passeportText.style.display = "block"
-        documentsText.style.display = "none"
-       
-    }
-)
-
-// Rubrique documents
-const documentsClick = document.getElementById("documents_title");
-const documentsText = document.getElementById("documents_text");
-
-documentsClick.addEventListener("click", () => {
-    documentsText.style.display = "block"
-    passeportText.style.display = "none"
-    }
-) 
-*/
-
 
 
 
