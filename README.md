@@ -12,7 +12,7 @@ Objectifs du projet :
 Liste des animations Javascript intégrées dans le projet :
 - ajouts de carrousels photos
 - intégration d'un service web météo avec la méthode API fetch
-- intégration d'animation du DOM (bouton back-to-top et message de validation d'un formulaire)
+- intégration d'animation du DOM (bouton back-to-top, système d'onglets et message de validation d'un formulaire)
 - utilisation d'un effet parallax
 
 
