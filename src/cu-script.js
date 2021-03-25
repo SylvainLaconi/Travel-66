@@ -1,23 +1,25 @@
-const carouselImages = document.querySelector('.carousel-images');
-const carouselButtons = document.querySelectorAll('.carousel-button');
-const numberOfImages = document.querySelectorAll('.carousel-images img').length;
+const img = document.querySelectorAll('#imgs img');
+const imgs = document.getElementById("imgs");
+let idx = 0;
 
-let imageIndex = 1;
-let translateX = 0;
+let interval = setInterval(run, 3000);
 
-carouselButtons.forEach(button => {
-    button.addEventListener('click', (event) => {
-     if (event.target.id === 'previous') {
-        if (imageIndex !== 1) {
-          imageIndex--;
-          translateX += 900;
-        }
-      } else {
-        if (imageIndex !== numberOfImages) {
-          imageIndex++;
-          translateX -= 900;
-        }
-      }
-      carouselImages.style.transform = `translateX(${translateX}px)`;
-    });
-  });
+function run() {
+  idx++;
+  changeImage();
+}
+
+function changeImage() {
+  if (idx > img.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = img.length - 1;
+  }
+
+  imgs.style.transform = `translateX(${-idx * 900}px)`;
+}
+
+function resetInterval() {
+  clearInterval(interval);
+  interval = setInterval(run, 2000);
+}
