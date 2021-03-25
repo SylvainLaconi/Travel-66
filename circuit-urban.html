@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circuit Urban</title>
-    <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/circuit-urban.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
     <header>
         <div class="dropdown">
             <button class="boutonmenuprincipal"><img src="images/icone-menu.png" alt="icone-menu" width="50px"></button>
@@ -38,45 +41,62 @@
             </ul>  
         </nav>
     </header>
-    
-    <div class="heading">
-        <div class="title">
-            <h3>Circuit Urban </h3>
-        </div>
-    </div>
 
-    <div class="city">
-        <p>Los Angeles - San Francisco - Las Vegas</p>
+    <section>
+        <div class="circuit-title">
+        <h2>Circuit Urban</h2>
     </div>
-    <div class="grid-container">
-        <div class="grid carousel-urban">
-            <button class="carousel-button" id="previous"><</button>
-                <div class="carousel-images">
-                    <img src="images/Los-Angeles_1_900x400.jpg" alt="test" class="img-urban">
-                    <img src="images/san-francisco_900x400.jpg" alt="test" class="img-urban">
-                    <img src="images/Las_Vegas_900x400.jpg" alt="test" class="img-urban">
+        <p id="circuit-subtitle">Los Angeles - San Francisco - Las Vegas</p>
+    </section>
+ 
+    <section class="section-carousel">
+        <div class="carousel">
+            <div class="image-container" id="imgs">
+              <img
+                src="images/san-francisco_900x400.jpg"
+                alt="san-francisco" class="img-carousel"/>
+              <img
+                src="images/Los-Angeles_1_900x400.jpg"
+                alt="Los-Angeles" class="img-carousel"/>
+              <img
+              src="images/Las_Vegas_900x400.jpg"
+              alt="Las-vVegas" class="img-carousel" /> 
+            </div>
+        </section>
+
+
+    <section class="card-container">
+        <div class="card">
+            
+                <h3 class="infos-h3">Programme</h3>
+                <div>
+                    <p class="paragraphe"><i class="fas fa-plane"></i>Jour 1 : S'arrêter à Santa Monica et Venice Beach</p>
+                    <p class="paragraphe"><i class="fas fa-temperature-high"></i>Jour 2 à 4 : Au coeur de LA, à Downtown ! profiter du coucher de soleil au Griffith observatory</p>
+                    <p class="paragraphe"><i class="fas fa-road"></i></i>Jour 5 à 6: Contempler le signe Hollywood et rouler sur Rodeo drive, Santa Monica Boulevard, Mulholland drive</p>
+                    <p class="paragraphe"><i class="fas fa-film"></i>Jour 8 et 9: Passer la journée à Universal Studio</p>
+                    <p class="paragraphe"><i class="fas fa-plane"></i>Jour 10 : Commencez la journée au pont du Golden Gate à San Francisco!</p>
                 </div>
-            <button class="carousel-button" id="next">></button>
         </div>
-    </div>
-   
-    <div class="cards-container">
+       
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d3314070.2929050997!2d-117.74606333302707!3d35.79019158884426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2sParc%20national%20du%20Grand%20Canyon%2C%20Arizona%2C%20%C3%89tats-Unis!3m2!1d36.1069258!2d-112.1129484!4m5!1s0x80c74b7776ae8a47%3A0xccc9f07c7bf2b054!2sParc%20national%20de%20la%20vall%C3%A9e%20de%20la%20Mort%2C%20%C3%89tats-Unis!3m2!1d36.505389099999995!2d-117.0794078!4m5!1s0x8096f09df58aecc5%3A0x2d249c2ced8003fe!2sParc%20national%20de%20Yosemite%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d37.8651011!2d-119.5383294!5e0!3m2!1sfr!2sfr!4v1615973717814!5m2!1sfr!2sfr" width="100%" height="100%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
         
         <div class="card">
-            <div class="programme"></div>
-                <p class="infos">Informations</p>
-                <p><i class="fa fa-anchor" style="font-size:24px"></i>paragraphe 3</p>
-                <p>paragraphe 4</p>
-                <p>paragraphe 5</p>
-                <p>paragraphe 6</p>
-            </div>
+            
+                <h3 class="infos-h3">Informations</h3>
+                <div>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Amoureux du shopping et du bling bling!</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Circuit de 10 jours </p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Combiné ville et plage de Los Angeles</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Budgets shopping et extra à prévoir !</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>Pensez à prendre votre San Francisco PASS !</p>
+                    <p class="paragraphe"><i class="fas fa-info"></i>En fonction de la longueur de votre road trip, louer un SUV peut s’avérer judicieux car c’est plus confortable</p>
+                </div>
+      
         </div>
-        <div class="card iframe"><iframe id="iframe"src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2329703.4388949876!2d-119.52745640069256!3d36.25215522069089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d34.0522342!2d-118.24368489999999!4m5!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Californie%2C%20%C3%89tats-Unis!3m2!1d37.7749295!2d-122.4194155!4m5!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20Nevada%2C%20%C3%89tats-Unis!3m2!1d36.1699412!2d-115.1398296!5e0!3m2!1sfr!2sfr!4v1615908764470!5m2!1sfr!2sfr" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis asperiores debitis impedit itaque eius libero adipisci officiis fuga tenetur velit fugiat rem commodi, labore distinctio, ducimus odit quidem eum?</div>
-        
-    </div>
 
-        
+    </section>
     <footer>
         <div id="footer-blocks">
             <div class="footer-items">
@@ -110,6 +130,6 @@
         </div>
         <div id="copyright">© 2021 Travel66</div>
     </footer>
-    <script src="src/cu-script.js"></script>
+<script src="src/cu-script.js"></script>
 </body>
 </html>

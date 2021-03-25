@@ -1,164 +1,263 @@
-/* Section circuits */ 
-.heading {
-    margin: 0 auto;
-
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.title h1 {
-    font-size: 3rem;
-    text-align: center;
-}
 
-.city {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-size: 25px;
+/* Page title */
+
+.circuit-title {
+    display: flex;
+    justify-content: center;
     font-weight: bold;
     text-align: center;
+    font-family: 'Dancing Script' ;
+    font-size: 2rem;
+    color: #463d37;
 }
 
-
-.grid-container{
-    grid-template-columns: 900px ;
-    grid-template-rows: 400px;
-    display: grid;
-    justify-content: center;
-    margin-top: 25px auto;
-    margin-bottom: 25px;
-}
-
-.cards-container{
+#circuit-subtitle {
     display: flex;
-    gap: 10px;
+    justify-content: center;
     margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Carousel */
+
+.section-carousel {
+    margin-bottom: 80px;
+}
+
+.img-carousel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel {
+    height: 400px;
+    width: 900px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cards */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
     margin-left: 50px;
     margin-right: 50px;
- 
- }
-
- .grid {
-    padding: 0.5em;
-    background-color: rgba(238, 228, 241, 0.637);
-    border: 2px solid rgba(238, 228, 241, 0.637);
-    border-radius: 1rem;
-  
 }
+
 .card {
-    padding: 0.5em;
-    background-color: rgba(228, 237, 241, 0.637);
-    border: 2px solid rgba(238, 228, 241, 0.637);
-    border-radius: 1rem;
     display: flex;
-    width: 100%;
-    height: 20em;
+    flex-direction: column;
+    width: 25%;
+    overflow: hidden;
+    align-items: center;
 }
 
-.programme{
+/* .programme {
     display: inline-block;
     width: 100%;
-    margin: 5px;
+    margin: 10px;
+    text-align: justify;
+    line-height: 1.5;
+} */
+
+.fas {
+    font-size:20px;
+    float:left;
+    margin-right: 15px;
 }
 
-.fa{
-    margin-right: 5px;
-}
-.infos{
+.infos-h3{
     text-align: center;
-    font-style: italic;
+    font-family: 'Dancing Script' ;
+    font-size: 1.5rem;
+    color: #463d37;
 }
 
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     transition: transform 1s;
     transform: translateY(-10px);
 }
 
-.img-urban{
-    max-width:100%;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-
-.carousel-urban {
-    align-items: center;
+h4 {
     display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-/****** *BUTTTON ********/
-
-.carousel-button{
-    background:  rgb(7, 70, 107);
-    border: 0;
-    border-radius: 50%;
+    justify-content: center;
     color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: bold;
-    height: 3rem;
-    opacity: 0.25;
-    position: absolute;
-    transition: opacity 0.25s;
-    width: 3rem;
-    z-index: 1;
+    font-size: 20px;
+    font-style: oblique;
 }
-
-#previous{
-    left: 5px;
-}
-
-#next{
-    right: 5px;
-}
-.carousel-button:hover{
-    opacity: 0.70;
-}
-
-.carousel-images{
-    display: flex;
-    transform: translateX(0);
-    transition: transform 0.70s;
-}
-
-/* media */
 
 @media (max-width: 576px) { 
-    
-    .title h1 {
-        font-size:3rem;
-        text-align: center;
-    }
-    .city ul{
-        font-size: 1em;
-        display: inherit;
-    }
-    .cards-container {
-        grid-template-columns: 100%;
-        display: grid;
-        grid-gap: 2rem;
+    .card-container  {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
-    .grid-container{
+
+    #circuit-subtitle {
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    iframe {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .card {
+        width: 90%;
+    }
+    .section-carousel {
         display: none;
     }
+}body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-    .carousel-urban {
-    align-items: center;
+
+/* Page title */
+
+.circuit-title {
     display: flex;
-    overflow: hidden;
-    position: relative;
-    }
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Dancing Script' ;
+    font-size: 2rem;
+    color: #463d37;
+}
 
-    .carousel-images{
+#circuit-subtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Carousel */
+
+.section-carousel {
+    margin-bottom: 80px;
+}
+
+.img-carousel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel {
+    height: 400px;
+    width: 900px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.image-container {
     display: flex;
     transform: translateX(0);
-    transition: transform 0.25s;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cards */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* .programme {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+    text-align: justify;
+    line-height: 1.5;
+} */
+
+.fas {
+    font-size:20px;
+    float:left;
+    margin-right: 15px;
+}
+
+.infos-h3{
+    text-align: center;
+    font-family: 'Dancing Script' ;
+    font-size: 1.5rem;
+    color: #463d37;
+}
+
+
+.card:hover {
+    cursor: pointer;
+    transition: transform 1s;
+    transform: translateY(-10px);
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+@media (max-width: 576px) { 
+    .card-container  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .img-urban{
-        border-radius: 10px;
-        margin-right: 10px;
-        width: 100%;
+    #circuit-subtitle {
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    iframe {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .card {
+        width: 90%;
+    }
+    .section-carousel {
+        display: none;
     }
 }
