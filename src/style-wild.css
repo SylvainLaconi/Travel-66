@@ -12,22 +12,28 @@ body {
     font-weight: bold;
     text-align: center;
     font-family: 'Dancing Script' ;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #463d37;
 }
 
-#circuit-subtitle {
+.circuit-title > h1 {
+    margin: 0 auto 0 auto;
+}
+
+
+.circuit-subtitle {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 10px auto 20px auto;
     font-size: 25px;
     font-weight: bold;
 }
 
+
 /* Carousel */
 
 .section-carousel {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .img-carousel {
@@ -83,12 +89,27 @@ body {
 }
 
 .infos-h2 {
+    animation: infos 1.5s steps(9);
+    overflow: hidden;
     text-align: center;
     font-family: 'Dancing Script' ;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #463d37;
 }
 
+.paragraphe {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+}
+
+@keyframes infos {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 9ch;
+    }
+}
 
 .card:hover {
     cursor: pointer;
@@ -96,13 +117,7 @@ body {
     transform: translateY(-10px);
 }
 
-h4 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    font-style: oblique;
-}
+
 
 @media (max-width: 576px) { 
     .card-container  {
@@ -111,7 +126,7 @@ h4 {
         justify-content: center;
     }
 
-    #circuit-subtitle {
+    .circuit-subtitle {
         display: flex;
         text-align: center;
         font-weight: bold;
@@ -130,3 +145,6 @@ h4 {
         display: none;
     }
 }
+
+@media (min-width: 577px) and (max-width: 992px) { 
+ }

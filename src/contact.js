@@ -5,11 +5,11 @@ function elementAnimate() {
     envoiFormulaire.animate([{
         transform: "translate(0%, 0)"
     }, {
-        transform: "translate(95%, 0)"
+        transform: "translate(50%, 0)"
     }],
     {
-        duration: 1000,
-        iteration: 1,
+        duration: 500,
+        iteration: 0,
         delay: 0,
         direction: 'normal',
         fill: 'forwards'
