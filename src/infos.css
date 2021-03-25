@@ -63,41 +63,57 @@ h2 {
    
 
    /* ~ RUBRIQUES ~ */
+  
+.theme_title p{
+    cursor: pointer;
+}
+
+.theme_title p:hover {
+    color: #8ea1e1;
+}
+
 /* Transports */
-#avion_title{
-    cursor: pointer;
+#transportsText0{
+    display: none;
+}
+
+#transportsText1{
+    display: none;
+}
+
+#transportsText2{
+    display: none;
+}
+
+.activeTransports{
+    display: block!important;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    line-height: 1.5;
    }
 
-#voiture_title{
-    cursor: pointer;
-   }
-#metro_title{
-    cursor: pointer;
-   }
-
-#avion_text {
-    display: none;
-   }
-#voiture_text {
-    display: none;
-   }
-#metro_text {
-    display: none;
-   }
+.titleClicked1{
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 /* Demarches */
 
-/*
 #demarchesText0{
     display: none;
-}*/
+}
 
 #demarchesText1{
     display: none;
 }
 
-.active{
-    display: block;
+.activeDemarches{
+    display: block!important;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    line-height: 1.5;
    }
 
 .titleClicked{
@@ -106,6 +122,26 @@ h2 {
 }
 
 /* Conseils */
+#conseilsText0{
+    display: none;
+}
+
+#conseilsText1{
+    display: none;
+}
+
+.activeConseils{
+    display: block!important;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    line-height: 1.5;
+   }
+
+.titleClicked2{
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 
  /* Bouton back-to-top */
