@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Galerie Photos</title>
     <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/homepage.css">
+    <link rel="stylesheet" href="src/galerie-photos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
                 <a href="circuit-wild.html">Circuit Wild</a>
                 <a href="circuit-beach.html">Circuit Beach</a>
                 <a href="infos-pratiques.html">Infos pratiques</a>
-                <a href="contact.html">Contact</a>
+                <a href="cgitontact.html">Contact</a>
                 <a href="galerie-photos.html">Galerie Photos</a>
             </div>
         </div>
@@ -32,62 +32,33 @@
         <!-- Barre de navigation -->
         <nav>
             <ul id="navbar-list">
-                <li class="active"><a href="index.html" class="navbar">Home</a></li>
+                <li><a href="index.html" class="navbar">Home</a></li>
                 <li><a href="circuit-urban.html" class="navbar">Circuit Urban</a></li>
                 <li><a href="circuit-wild.html" class="navbar">Circuit Wild</a></li>
                 <li><a href="circuit-beach.html" class="navbar">Circuit Beach</a></li>
                 <li><a href="infos-pratiques.html" class="navbar">Infos pratiques</a></li>
                 <li><a href="contact.html" class="navbar">Contact</a></li>
-                <li><a href="galerie-photos.html" class="navbar">Galerie Photos</a></li>
+                <li class="active"><a href="galerie-photos.html" class="navbar">Galerie Photos</a></li>
             </ul>  
         </nav>
     </header>
-    <div id="main-container">
-        <!-- Section du carrousel principal -->
-        <section>
-            <div class="carousel">
-                <div class="image-container" id="imgs">
-                  <img
-                    src="images/main-picture.jpg"
-                    alt="first-image" class="img-carousel"
-                  />
-                  <img
-                    src="images/main-picture2.jpg"
-                    alt="second-image" class="img-carousel"
-                  />
-                  <img
-                    src="images/main-picture3.jpg"
-                    alt="third-image" class="img-carousel"
-                  />
-                  <img
-                    src="images/main-picture4.jpg"
-                    alt="fourth-image" class="img-carousel"
-                  />
-                  <img
-                    src="images/main-picture5.jpg"
-                    alt="fifth-image" class="img-carousel"
-                  />
-                  <img
-                    src="images/main-picture6.jpg"
-                    alt="sixth-image" class="img-carousel"
-                  />
-                </div>
-        </section>
-        <!-- Section corps de texte -->
-        <section id="bottom-container">
-            <div id="presentation">
-                <h1>Hello voyageur !</h1>
-                <p>Bienvenue sur notre site dédié aux circuits dans l'Ouest américain.
-                Nous sommes une équipe de cinq passionnés de voyages.
-                Nous avons créé Travel 66 pour vous accompagner dans l'organisation de votre roadtrip.</p>
-            </div>
-            <div id="meteo-container">
-                <h1>Quel temps fait-il sur la "West-Coast" ?</h1>
-                <span id="meteo"></span><br />
-                <img src="" alt="icone-meteo" id="icone-meteo">
-            </div>
-        </section>   
-    </div> 
+    <!-- Section de galerie photos en parallax -->
+    <section id="parallax">
+        <h1>Galerie Photos</h1>
+        <div id="galerie-container">
+            <div class="photo-container"><img src="images/Dvalley.jpeg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/grandcanyon.png" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/Las_Vegas_900x400.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/Los-Angeles_1_900x400.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/main-picture.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/main-picture2.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/main-picture3.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/main-picture4.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/main-picture5.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/main-picture6.jpg" alt="" class="photo-galerie"></div>
+            <div class="photo-container"><img src="images/Yosemitepark.jpeg" alt="" class="photo-galerie"></div>
+        </div>
+    </section>
     <!-- Début du footer -->
     <footer>
         <div id="footer-blocks">
