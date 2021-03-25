@@ -94,8 +94,9 @@ h2 {
    }
 
 .titleClicked1{
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: #e4d9e8;
+    border-radius: 0.3rem;
+    padding: 5px;
 }
 
 /* Demarches */
@@ -117,8 +118,9 @@ h2 {
    }
 
 .titleClicked{
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: #e4d9e8;
+    border-radius: 0.3rem;
+    padding: 5px;
 }
 
 /* Conseils */
@@ -139,8 +141,9 @@ h2 {
    }
 
 .titleClicked2{
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: #e4d9e8;
+    border-radius: 0.3rem;
+    padding: 5px;
 }
 
 
