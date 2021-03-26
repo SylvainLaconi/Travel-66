@@ -3,6 +3,7 @@
   .contact_bloc_img {
     display: none;
   }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -123,13 +124,13 @@
 
 h1 {
   font-family: "Dancing Script";
-  font-size: 3rem;
+  font-size: 60px;
   color: #463d37;
   text-align: center;
 }
 h2 {
   font-family: "Dancing Script";
-  font-size: 2rem;
+  font-size: 40px;
   color: #463d37;
   text-align: center;
 }
