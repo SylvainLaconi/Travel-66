@@ -15,8 +15,9 @@ function changeImage() {
   } else if (idx < 0) {
     idx = img.length - 1;
   }
-
-  imgs.style.transform = `translateX(${-idx * 900}px)`;
+  for(let i in img){
+    imgs.style.transform = `translateX(${-idx * img[i].width}px)`;
+  }
 }
 
 function resetInterval() {
