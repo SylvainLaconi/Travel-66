@@ -1,5 +1,6 @@
 # Travel-66 : site web spécialisé dans l'organisation de circuits touristiques dans l'ouest américain ✈️ 🧳 🇺🇸 🗺 🏜 🏖
 Projet 1 - WCS - 0321 - REMOTE : Sarah, Marie-Anne, Milad, David, Sylvain
+lien vers notre site : https://travel-66.netlify.app/
 
 Objectifs du projet :
 - Réaliser un site web vitrine en 2 semaines en HTML/CSS
