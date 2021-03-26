@@ -32,7 +32,7 @@ function resetInterval() {
 
 //API weather
 
-let urlLosAngeles = "http://api.weatherapi.com/v1/current.json?key=45be172a2d174c11abf101113211903&q=Los Angeles&aqi=no&lang=fr";
+let urlLosAngeles = "https://api.weatherapi.com/v1/current.json?key=45be172a2d174c11abf101113211903&q=Los Angeles&aqi=no&lang=fr";
 
 let meteoLosAngeles = document.getElementById("meteo");
 
