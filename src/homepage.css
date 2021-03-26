@@ -6,7 +6,7 @@ h2 {
 
 .img-carousel {
     width: 100%;
-    max-height: 600px;
+    height: 100%;
     object-fit: cover;
 }
 
