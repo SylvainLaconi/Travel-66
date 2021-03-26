@@ -76,7 +76,7 @@ header {
     min-width: 50px;
     }
 .dropdown-child a {
-    color: white;
+    color: black;
     padding: 20px;
     text-decoration: none;
     display: block;
