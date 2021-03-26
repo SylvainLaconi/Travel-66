@@ -86,7 +86,8 @@ header {
     }
 
     .dropdown-child a:hover {
-        font-weight: bold;
+        font-weight: bolder;
+        font-size: 26px;
     }
 
 
