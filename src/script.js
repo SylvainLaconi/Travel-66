@@ -16,9 +16,7 @@ function run() {
 function changeImage() {
   if (idx > img.length - 1) {
     idx = 0;
-  } else if (idx < 0) {
-    idx = img.length - 1;
-  }
+  } 
 for(let i in img){
   imgs.style.transform = `translateX(${-idx * img[i].width}px)`;
 }
